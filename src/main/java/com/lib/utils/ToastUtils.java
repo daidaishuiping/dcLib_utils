@@ -1,0 +1,16 @@
+package com.lib.utils;
+
+import android.content.Context;
+import android.widget.Toast;
+
+/**
+ * 吐司
+ *
+ * @author daichao
+ */
+public class ToastUtils {
+
+    public static void showMsg(Context context, String msg) {
+        Toast.makeText(context, "拉拉", Toast.LENGTH_SHORT).show();
+    }
+}
