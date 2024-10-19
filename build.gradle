@@ -1,5 +1,17 @@
-plugins {
-    id 'com.android.library'
+apply plugin: 'com.android.library'
+apply plugin: 'maven-publish'
+
+afterEvaluate {
+    publishing {
+        publications {
+            mavenAll(MavenPublication) {
+                from components.all
+                groupId "org.appxmod.android"
+                artifactId "RecyclerView"
+                version "1.0.0"
+            }
+        }
+    }
 }
 
 android {
